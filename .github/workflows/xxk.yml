@@ -1,4 +1,4 @@
-name: 学习通
+name: CII
 on:
   push:
     tags:
@@ -50,4 +50,3 @@ jobs:
           coscli-version: 'v0.12.0-beta' # Optional, default to 'v0.12.0-beta'.  Use 'latest' to get the latest version.
       - run: |
           coscli sync ${{github.workspace}}/app/build/outputs/apk/release cos://${{ secrets.COS_BUCKET }} --recursive --thread-num 20
-0 comments on commit 645d9b7
